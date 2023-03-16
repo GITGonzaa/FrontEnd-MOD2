@@ -1,0 +1,30 @@
+
+.container-fluid
+{
+    background-color: #0707f1;
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover
+{
+Color: blue;
+}
+ul.list-group.list-group-horizontal
+{
+    background-color: transparent;
+
+}
+i.fa-solid.fa-user.fa-2xl:hover:hover
+{
+    color:chartreuse ;
+}
+.portada 
+{
+    opacity: 100% ;
+    text-align: start;
+    background-image: url(../img/fabrica\ automovil.jpg);
+    background-position: 66% ;
+    
+}
+.imagen.portada 
+{
+    width: 100%;
+}
