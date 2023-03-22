@@ -14,15 +14,20 @@
     <script src="https://kit.fontawesome.com/671fa01bb2.js" crossorigin="anonymous"></script>
 
  </head>
+
   <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo inti.png" alt="Boots" width="" height="45">
+          </a>
             
             <a class="navbar-brand" href="#"><b>Portfolio web Gonzalo Rodriguez</b></a>
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item">
-                <i class="fa-solid fa-user fa-2xl"></i>
+                <i class="fa-solid fa-user fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal"
+                ></i>
             </li>
             <li class="list-group-item">
                 <i class="fa-brands fa-github fa-2xl"></i>
@@ -30,11 +35,39 @@
             <li class="list-group-item">
                 <i class="fa-brands fa-linkedin fa-2xl"></i>
             </li>
-
-        </div>
+          </ul>
+          <!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <!-- FORMULARIO-->
+      <div class="modal-body"> 
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email </label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+         <!-- BOTON DE INICIAR SESION-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Iniciar sesion</button>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
       </nav>
       
-
+ <!-- Portada -->
     <div class="imagen portada">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -71,7 +104,11 @@
         </div>
 
     </div>
+<!-- Cuerpo -->
+<div>
 
+  <!-- Educacion -->
+<div>
     <div>
             <h2 class="Subtittle" >Educacion</h2>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -79,15 +116,12 @@
               <button class="btn btn-primary" type="button">Guardar <i class="fa-sharp fa-regular fa-floppy-disk"></i>
               </button>
             </div>
-            <h3></h3>
-            <p></p>
-
-
-    <div class="card mb-3" style="max-width: 75%;">
+            
+            <div class="card mb-3" style="max-width: 75%;">
         <div class="row g-0">
-          <div class="col-md-1">
+            <div class="col-md-1">
             <img src="assets/img/toolbox.png" class="img-fluid rounded-start" alt="">
-          </div>
+           </div>
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Tecnico en instalaciones electromecanicas</h5>
@@ -98,6 +132,7 @@
         </div>
       </div>
     </div>
+
     <div class="card mb-3" style="max-width: 75%;">
       <div class="row g-0">
         <div class="col-md-1">
@@ -113,6 +148,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Experiencia -->
   <div>
        <h2 class="Subtittle" >Experiencia</h2>
        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -120,10 +157,8 @@
         <button class="btn btn-primary" type="button">Guardar <i class="fa-sharp fa-regular fa-floppy-disk"></i>
         </button>
       </div>
-       <h3></h3>
-       <p></p>
-  
-       <div class="card mb-3" style="max-width: 75%;">
+       <!-- (PASANTE) MANTENIMIENTO DE VEHICULOS -->
+       <div class="card mb-3" style="max-width: 100%;">
         <div class="row g-0">
           <div class="col-md-1">
             <img src="assets/img/tools.png" class="img-fluid rounded-start" alt="">
@@ -138,7 +173,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- (OPERARIO) ELECTROFUEGUINA -->
     <div class="card mb-3" style="max-width: 100%;">
       <div class="row g-0">
         <div class="col-md-1">
@@ -153,6 +188,7 @@
         </div>
       </div>
     </div>
+    <!--(SOCIO) SOLUCIONES INFORMATICAS T.D.F -->
     <div class="card mb-3" style="max-width: 100%;">
       <div class="row g-0">
         <div class="col-md-1">
@@ -168,6 +204,8 @@
       </div>
     </div>
   </div>
+
+<!-- Skills -->
   <div>
 
     <h3>Hard Skills & Soft Skills </h3>
@@ -176,24 +214,24 @@
       <button class="btn btn-primary" type="button">Guardar <i class="fa-sharp fa-regular fa-floppy-disk"></i>
       </button>
     </div>
+ <!-- Trabajo en equipo -->
     <div class="container">
         <h4>Trabajo en equipo</h4>
-  <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-   
-    <div class="progress-bar progress-bar-striped" style="width: 85%">85%</div>
-  
-</div>
-</div>
-  </div>
+        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped" style="width: 85%">85%</div>
+       </div>
+
+    </div>
+ 
+  <!-- Resolucion de problema -->
   <div class="container">
     <h4>Resolucion de problema </h4>
-<div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-
-<div class="progress-bar progress-bar-striped" style="width: 75%">75%</div>
-
+       <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+         <div class="progress-bar progress-bar-striped" style="width: 75%">75%</div>
+        </div>
+  </div>
 </div>
-</div>
-  
+  <!-- Proyectos -->
 <div>
 <h3>Proyectos</h3>
 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -202,6 +240,7 @@
   </button>
 </div>
 
+</div>
 </div>
 
 
